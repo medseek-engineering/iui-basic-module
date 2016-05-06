@@ -61,7 +61,8 @@
 
     var jsFilesCombined = [].concat(packageJson.buildSettings.appFiles.jsFiles);
 
-    jsFilesCombined.push(packageJson.buildSettings.destination.js+'/'+packageJson.buildSettings.createTemplates.templateFile);
+    jsFilesCombined.push(packageJson.buildSettings.destination.js +
+                         '/'+packageJson.buildSettings.createTemplates.templateFile);
     jsFilesCombined.push(packageJson.buildSettings.combineFiles.ignore);
     gulp.src(jsFilesCombined, {base: packageJson.buildSettings.base})
       .pipe(gulpConcat(packageJson.buildSettings.destination.jsFile))
@@ -93,16 +94,6 @@
       .pipe(minifyCSS())
       .pipe(gulp.dest(packageJson.buildSettings.destination.css))
       .pipe(browserSync.stream());
-  });
-
-  gulp.task('nodemon', function (cb) {
-    var called = false;
-    return nodemon({script: packageJson.main}).on('start', function () {
-      if (!called) {
-        called = true;
-        cb();
-      }
-    });
   });
 
   gulp.task('serve', ['lint', 'test', 'compileStyle', 'createTemplates', 'combineFiles'], function() {

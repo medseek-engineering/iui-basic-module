@@ -7,6 +7,11 @@ Vars to be replaced:
 
 # iui-basic
 
+*Angular version: 1.3.2*
+
+Follow the Angular Style Guide:
+https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+
 ## Build
 **Note:** if you make changes, you must run **gulp** to rebuild the combined files in the 'dist' directory. You may need to also update the package.json version number.
 
