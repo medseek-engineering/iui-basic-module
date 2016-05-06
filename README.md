@@ -3,6 +3,7 @@ Vars to be replaced:
  - iuiBasic
  - iui.basicTemplates
  - iui.basic
+ - Basic
 
 
 # iui-basic
