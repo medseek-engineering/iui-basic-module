@@ -17,6 +17,7 @@ https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 - `npm start` - alias for `npm run server`
 - `npm run build` - compiles/minfies JS & CSS
 - `npm run test` - runs linting and unit test
+- `npm run test-continuous` - runs linting and unit test continuously
 - `npm run server` - creates a small web server - useful for building
 
 ## Build
