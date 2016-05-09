@@ -96,7 +96,7 @@
       .pipe(browserSync.stream());
   });
 
-  gulp.task('serve', ['lint', 'test', 'compileStyle', 'createTemplates', 'combineFiles'], function() {
+  gulp.task('server', ['lint', 'test', 'compileStyle', 'createTemplates', 'combineFiles'], function() {
     environment = 'development';
     browserSync.init({
         server: {
@@ -112,6 +112,6 @@
 
   gulp.task('publish', ['lint', 'test', 'createTemplates', 'combineFiles', 'compileStyle']);
 
-  gulp.task('default', ['serve']);
+  gulp.task('default', ['server']);
 
 })();

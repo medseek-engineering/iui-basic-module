@@ -5,9 +5,10 @@
   "main": "./lib/index.js",
   "private": false,
   "scripts": {
+    "start": "npm run server",
     "build": "gulp build",
     "test": "gulp test",
-    "serve": "gulp"
+    "server": "gulp server"
   },
   "repository": {
     "type": "git",

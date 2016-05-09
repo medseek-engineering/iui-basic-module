@@ -14,9 +14,10 @@ Follow the Angular Style Guide:
 https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
 ## Scripts
-- *npm run build* - compiles/minfies JS & CSS
-- *npm run test* - runs linting and unit test
-- *npm run serve* - creates a small web server - useful for building
+- `npm start` - alias for `npm run server`
+- `npm run build` - compiles/minfies JS & CSS
+- `npm run test` - runs linting and unit test
+- `npm run server` - creates a small web server - useful for building
 
 ## Build
 **Note:** if you make changes, you must run **npm run build** to rebuild the combined files in the 'dist' directory. You may need to also update the package.json version number.
