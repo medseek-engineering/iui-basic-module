@@ -20,7 +20,7 @@ https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 - `npm run server` - creates a small web server - useful for building
 
 ## Build
-**Note:** if you make changes, you must run **npm run build** to rebuild the combined files in the 'dist' directory. You may need to also update the package.json version number.
+**Note:** if you make changes, you must run `npm run build` to rebuild the combined files in the 'dist' directory. You will need to also update the package.json version number.
 
 ## Changelog
 
