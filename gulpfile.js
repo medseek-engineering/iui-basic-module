@@ -4,6 +4,7 @@
   var gulp = require('gulp');
   var gulpConcat = require('gulp-concat');
   var minjs = require('gulp-uglify');
+  var babel = require('gulp-babel');
   var minifyCSS = require('gulp-minify-css');
   var compass = require('gulp-compass');
   var karma = require('karma').server;
@@ -65,6 +66,9 @@
                          '/'+packageJson.buildSettings.createTemplates.templateFile);
     jsFilesCombined.push(packageJson.buildSettings.combineFiles.ignore);
     gulp.src(jsFilesCombined, {base: packageJson.buildSettings.base})
+      .pipe(babel({
+        presets: ['es2015']
+      }))
       .pipe(gulpConcat(packageJson.buildSettings.destination.jsFile))
       .pipe(gulp.dest(packageJson.buildSettings.destination.js))
       .pipe(rename(packageJson.buildSettings.destination.jsFileMin))
