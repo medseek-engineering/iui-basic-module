@@ -45,6 +45,13 @@
     }, done);
   });
 
+  gulp.task('testContinuous', ['lint'], function (done) {
+    karma.start({
+      configFile: __dirname + '/karma.conf.js',
+      singleRun: false
+    }, done);
+  });
+
   gulp.task('createTemplates', function(cb){
     gulp.src(packageJson.buildSettings.appFiles.templateFiles)
       .pipe(ngHtml2Js({

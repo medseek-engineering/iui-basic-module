@@ -8,6 +8,7 @@
     "start": "npm run server",
     "build": "gulp build",
     "test": "gulp test",
+    "test-continuous": "gulp testContinuous",
     "server": "gulp server"
   },
   "repository": {
