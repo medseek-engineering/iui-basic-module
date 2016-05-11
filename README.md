@@ -4,6 +4,7 @@ Vars to be replaced:
  - iui.basicTemplates
  - iui.basic
  - Basic
+ - basic
 
 
 # iui-basic
