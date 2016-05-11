@@ -6,6 +6,7 @@ Vars to be replaced:
  - Basic
  - basic
 
+You will then need to change all of the file and folder names with `basic` and change them to the desired directive / module name
 
 # iui-basic
 
